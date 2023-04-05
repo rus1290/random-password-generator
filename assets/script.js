@@ -4,8 +4,17 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+function charLength() {
+  var length = prompt("Please choose the number between 8 to 128 characters.");
+    if (length >= 8 && length < 128 && !isNaN(length)){
+    return length;
+  } else {
+    alert("Please try agian!");
+  }
+  return length
+}
+
 function generatePassword() {
-  console.log("Hey! You clicked me! :)");
 
   // The required code to make the function work:
   // 1. Prompt the user for password length
@@ -13,8 +22,8 @@ function generatePassword() {
   // 3. Check wether the input matches the criteria
   // 4. Generate password based on the criteria
   // 5. Display password to the page
-
-  return "Test, test"
+  
+  var passwordLength = charLength();
 }
 
 // Write password to the #password input
@@ -23,7 +32,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  
 }
 
 // Add event listener to generate button
