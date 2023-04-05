@@ -50,24 +50,29 @@ function charDefined(choice) {
   return charSelect;
 }
 
-function generatePassword() {
+function generatePassword(length, charPool) {
 
-  
   // The required code to make the function work:
   // 1. Prompt the user for password length
   // 2. Prompt the user for character type
   // 3. Check wether the input matches the criteria
   // 4. Generate password based on the criteria
   // 5. Display password to the page
-  
-  var passLength = charLength();
-  var choice = charType();
-  var charPool = charDefined(choice);
+
+  var passwordString = " ";
+  for(var i = 0; i < length; i++) {
+    var randomNumber = Math.floor(Math.random() * charPool.length);
+    passwordString += charPool.substring(randomNumber, randomNumber +1);
+  }
+  return(passwordString);
 }
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var length = charLength();
+  var choice = charType();
+  var charPool = charDefined(choice);
+  var password = generatePassword(length, charPool)
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
