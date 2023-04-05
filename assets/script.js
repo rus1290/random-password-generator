@@ -36,7 +36,7 @@ function charType() {
   return choice;
 }
 
-// Here we defined what each character type is and stored all selected choices in a variable charSelect.
+// Here we defined what each character type is and used choice, from the previous function to to store chall selected choices in a variable charSelect.
 function charDefined(choice) {
   loweChar = "abcdefghijklmnopqrstuvwxyz";
   upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -52,6 +52,7 @@ function charDefined(choice) {
 
 function generatePassword() {
 
+  
   // The required code to make the function work:
   // 1. Prompt the user for password length
   // 2. Prompt the user for character type
@@ -59,8 +60,9 @@ function generatePassword() {
   // 4. Generate password based on the criteria
   // 5. Display password to the page
   
-  var passwordLength = charLength();
-  var charChoice = charType();
+  var passLength = charLength();
+  var choice = charType();
+  var charPool = charDefined(choice);
 }
 
 // Write password to the #password input
