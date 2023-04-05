@@ -33,6 +33,21 @@ function charType() {
     if (special == true){choice += "s"};
     console.log(choice);
   }
+  return choice;
+}
+
+// Here we defined what each character type is and stored all selected choices in a variable charSelect.
+function charDefined(choice) {
+  loweChar = "abcdefghijklmnopqrstuvwxyz";
+  upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  numberChar = "0123456789";
+  specialChar = "!#$%&'()*\"+,-./:;<=>?@[]^_`{|}~";
+  var charSelect = " ";
+  if(choice.includes("1")){charSelect += lowerChar};
+  if(choice.includes("u")){charSelect += upperChar};
+  if(choice.includes("n")){charSelect += numberChar};
+  if(choice.includes("s")){charSelect += specialChar};
+  return charSelect;
 }
 
 function generatePassword() {
