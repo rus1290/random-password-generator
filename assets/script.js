@@ -5,14 +5,22 @@
 var generateBtn = document.querySelector("#generate");
 
 // this function prompts the user to choose length of the password and also validates the answer of a user.
+//
 function charLength() {
-  var length = prompt("Please choose the number between 8 to 128 characters.");
-    if (length >= 8 && length < 128 && !isNaN(length)){
-    return length;
-  } else {
-    alert("Please try agian!");
+    while(1){
+      var length = prompt("Please choose the number between 8 to 128 characters.");
+      if (length == ""){
+        length =8;
+        return length;
+      }
+      
+      if (length >= 8 && length < 128 && !isNaN(length)){
+        return length;
+      } else {
+        alert("Please try agian!");
+      }
+   // return length
   }
-  return length
 }
 
 // this function prompts the user for character type;
@@ -50,6 +58,8 @@ function charDefined(choice) {
   return charSelect;
 }
 
+// function retrieves data from variables length and charPool to apply for loop with Math.random
+// to generate random password.
 function generatePassword(length, charPool) {
 
   // The required code to make the function work:
