@@ -18,3 +18,6 @@
     c. function charDefined defined all the character types and used data from a previous function - charType var choice, to generate password, that is done in the next function.
 
     d. function generatePassword, that I created initially, uses for loop to iterate through all the character types from a previous function - charDefined, which are saved in a variable charPool(used in writePassword) and apply Math.random method to generate random password, based on user's choices.
+    
+    Random Password Generator Webpage:
+    ![Alt text](bootcamp\random_password_generator\printscreen.png")
