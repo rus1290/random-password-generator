@@ -20,5 +20,5 @@
     d. function generatePassword, that I created initially, uses for loop to iterate through all the character types from a previous function - charDefined, which are saved in a variable charPool(used in writePassword) and apply Math.random method to generate random password, based on user's choices.
     
     Random Password Generator Webpage:
-    ![prntscrn](bootcamp\random_password_generator\printscreen.png)
-    
+    <img width="1276" alt="printscreen" src="https://user-images.githubusercontent.com/81056953/230680724-cf62c884-e23a-4879-91a4-453a905d3ade.png">
+
