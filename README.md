@@ -23,4 +23,4 @@ d. function generatePassword, that I created initially, uses for loop to iterate
 
 ![screenshot](assets/printscreen.png)
 
-[webpage link](https://rus1290.github.io/random-password-generator/)
+[WEBPAGE LINK](https://rus1290.github.io/random-password-generator/)
